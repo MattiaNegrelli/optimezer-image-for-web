@@ -19,6 +19,16 @@ app.get('/tool', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'tool.html'));
 });
 
+// Route Privacy Policy
+app.get('/privacy', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'privacy.html'));
+});
+
+// Route Termini e Condizioni
+app.get('/terms', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'terms.html'));
+});
+
 // Configurazione Multer (in memoria per semplicità)
 const upload = multer({
     storage: multer.memoryStorage(),
