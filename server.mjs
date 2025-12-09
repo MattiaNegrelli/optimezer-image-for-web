@@ -14,6 +14,11 @@ const app = express();
 // Middleware per file statici
 app.use(express.static(path.join(__dirname, 'public')));
 
+// Route per il tool
+app.get('/tool', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'tool.html'));
+});
+
 // Configurazione Multer (in memoria per semplicità)
 const upload = multer({
     storage: multer.memoryStorage(),

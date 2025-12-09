@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Optimizer Pro</title>
+    <link rel="icon" type="image/png" sizes="32x32"
+        href="https://mattianegrelli.it/assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16"
+        href="https://mattianegrelli.it/assets/img/favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180"
+        href="https://mattianegrelli.it/assets/img/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="https://mattianegrelli.it/assets/img/favicon/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="background-decoration"></div>
+
+    <div class="main-wrapper">
+        <header>
+            <div class="logo">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                    <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                    <polyline points="21 15 16 10 5 21"></polyline>
+                </svg>
+                <h1>OptiPix</h1>
+            </div>
+            <p class="subtitle">Ottimizza le tue immagini per il web in un istante.</p>
+        </header>
+
+        <main class="glass-panel">
+            <!-- Area Drag & Drop -->
+            <div id="drop-zone" class="drop-zone">
+                <div class="drop-content">
+                    <div class="icon-wrapper">
+                        <svg class="upload-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="17 8 12 3 7 8"></polyline>
+                            <line x1="12" y1="3" x2="12" y2="15"></line>
+                        </svg>
+                    </div>
+                    <h3>Trascina qui i tuoi file</h3>
+                    <p>Supporta JPG, PNG. Ottimizzazione automatica WebP.</p>
+                    <button class="btn-select" onclick="document.getElementById('file-input').click()">Scegli
+                        File</button>
+                    <input type="file" id="file-input" multiple accept="image/png, image/jpeg, image/jpg" hidden>
+                </div>
+            </div>
+
+            <!-- Opzioni di Ottimizzazione -->
+            <div class="settings-section">
+                <div class="section-title">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="3"></circle>
+                        <path
+                            d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z">
+                        </path>
+                    </svg>
+                    <span>Configurazione</span>
+                </div>
+                <div class="settings-grid">
+                    <div class="input-group">
+                        <label for="maxWidth">Larghezza Max</label>
+                        <div class="input-wrapper">
+                            <input type="number" id="maxWidth" value="1600" min="100" step="100">
+                            <span class="unit">px</span>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <label for="qualityJpg">Qualità JPG</label>
+                        <div class="range-wrapper">
+                            <input type="range" id="qualityJpg" value="75" min="1" max="100"
+                                oninput="this.nextElementSibling.value = this.value">
+                            <output>75</output>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <label for="qualityWebp">Qualità WebP</label>
+                        <div class="range-wrapper">
+                            <input type="range" id="qualityWebp" value="75" min="1" max="100"
+                                oninput="this.nextElementSibling.value = this.value">
+                            <output>75</output>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lista File -->
+            <div id="file-list" class="file-list"></div>
+
+            <!-- Azioni -->
+            <div class="actions-bar">
+                <button id="optimize-btn" class="btn-primary" disabled>
+                    <span>Ottimizza & Scarica</span>
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Stato -->
+            <div id="status-message" class="status-toast hidden"></div>
+        </main>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

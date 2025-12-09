@@ -4,11 +4,218 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Optimizer Pro</title>
+    <meta name="description"
+        content="Ottimizza le tue immagini online gratis con l'intelligenza artificiale. Converti in WebP, riduci le dimensioni del 80% senza perdere qualità. Veloce, sicuro e facile per SEO e performance.">
+    <meta name="keywords"
+        content="ottimizzazione immagini, compressione immagini, webp converter, ai image optimizer, gratis, online, seo immagini, velocizzare sito web, ridimensiona foto, compressore jpg png">
+    <title>Ottimizza Immagini Online - AI, WebP, JPG, PNG - Gratis & Veloce</title>
+    <link rel="icon" type="image/png" sizes="32x32"
+        href="https://mattianegrelli.it/assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16"
+        href="https://mattianegrelli.it/assets/img/favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180"
+        href="https://mattianegrelli.it/assets/img/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="https://mattianegrelli.it/assets/img/favicon/site.webmanifest">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "OptiPix",
+      "applicationCategory": "MultimediaApplication",
+      "operatingSystem": "Web",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "EUR"
+      },
+      "description": "Tool online gratuito per ottimizzare e comprimere immagini JPG, PNG e convertirle in WebP per il web.",
+      "featureList": "Compressione AI, Conversione WebP, Ridimensionamento, Privacy garantita"
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "È veramente gratuito?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sì, OptiPix è completamente gratuito per uso personale e commerciale. Non ci sono costi nascosti o abbonamenti."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Le mie immagini sono al sicuro?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Assolutamente sì. Le immagini vengono elaborate su server temporanei e cancellate immediatamente dopo il download. Nessuno ha accesso ai tuoi file."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Quali formati supportate?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Supportiamo in input JPG, JPEG e PNG. In output forniamo immagini ottimizzate nello stesso formato o convertite in WebP per massime prestazioni."
+        }
+      }]
+    }
+    </script>
+
+    <style>
+        /* Specific styles for homepage */
+        .hero-section {
+            text-align: center;
+            padding: 4rem 0 3rem;
+        }
+
+        .hero-title {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            line-height: 1.1;
+            background: linear-gradient(to right, var(--primary), #ec4899);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero-description {
+            font-size: 1.25rem;
+            color: var(--text-muted);
+            max-width: 700px;
+            margin: 0 auto 2.5rem;
+            line-height: 1.6;
+        }
+
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            background: var(--primary);
+            color: white;
+            padding: 1.25rem 3rem;
+            border-radius: 3rem;
+            font-weight: 700;
+            font-size: 1.25rem;
+            text-decoration: none;
+            transition: all 0.3s;
+            box-shadow: 0 4px 12px rgba(99, 102, 241, 0.4);
+        }
+
+        .cta-button:hover {
+            background: var(--primary-hover);
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(99, 102, 241, 0.5);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 4rem;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 1.5rem;
+            box-shadow: var(--shadow-md);
+            border: 1px solid var(--border-color);
+            transition: transform 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary);
+        }
+
+        .feature-icon {
+            width: 56px;
+            height: 56px;
+            background: #eef2ff;
+            color: var(--primary);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .feature-text h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.75rem;
+            color: var(--text-main);
+            font-weight: 700;
+        }
+
+        .feature-text p {
+            color: var(--text-muted);
+            line-height: 1.6;
+            font-size: 1.05rem;
+        }
+
+        .content-section {
+            margin-top: 6rem;
+            padding: 3rem;
+            background: rgba(255, 255, 255, 0.6);
+            border-radius: 2rem;
+            border: 1px solid rgba(255, 255, 255, 0.8);
+        }
+
+        .content-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            color: var(--text-main);
+        }
+
+        .content-block {
+            margin-bottom: 3rem;
+        }
+
+        .content-block h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+
+        .content-block p {
+            color: var(--text-muted);
+            line-height: 1.7;
+            margin-bottom: 1rem;
+        }
+
+        .faq-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .faq-item {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 1rem;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .faq-item h4 {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            color: var(--text-main);
+        }
+
+        .faq-item p {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            line-height: 1.5;
+        }
+    </style>
 </head>
 
 <body>
@@ -26,87 +233,130 @@
                 </svg>
                 <h1>OptiPix</h1>
             </div>
-            <p class="subtitle">Ottimizza le tue immagini per il web in un istante.</p>
         </header>
 
         <main class="glass-panel">
-            <!-- Area Drag & Drop -->
-            <div id="drop-zone" class="drop-zone">
-                <div class="drop-content">
-                    <div class="icon-wrapper">
-                        <svg class="upload-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                            <polyline points="17 8 12 3 7 8"></polyline>
-                            <line x1="12" y1="3" x2="12" y2="15"></line>
+            <div class="hero-section">
+                <h1 class="hero-title">Ottimizzazione Immagini<br>Veloce & Intelligente</h1>
+                <p class="hero-description">
+                    Migliora la SEO del tuo sito web riducendo il peso delle immagini fino all'80% senza perdere
+                    qualità. Conversione automatica in WebP e compressione intelligente per designer e sviluppatori.
+                </p>
+
+                <a href="/tool" class="cta-button">
+                    <span>Inizia Ora - È Gratis</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                </a>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
                         </svg>
                     </div>
-                    <h3>Trascina qui i tuoi file</h3>
-                    <p>Supporta JPG, PNG. Ottimizzazione automatica WebP.</p>
-                    <button class="btn-select" onclick="document.getElementById('file-input').click()">Scegli
-                        File</button>
-                    <input type="file" id="file-input" multiple accept="image/png, image/jpeg, image/jpg" hidden>
+                    <div class="feature-text">
+                        <h3>Velocità Estrema</h3>
+                        <p>Il nostro algoritmo di compressione lavora in millisecondi. Carica, ottimizza e scarica le
+                            tue immagini istantaneamente.</p>
+                    </div>
                 </div>
-            </div>
 
-            <!-- Opzioni di Ottimizzazione -->
-            <div class="settings-section">
-                <div class="section-title">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <circle cx="12" cy="12" r="3"></circle>
-                        <path
-                            d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z">
-                        </path>
-                    </svg>
-                    <span>Configurazione</span>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <rect x="3" y="3" width="18" height="18" rx="2" />
+                            <circle cx="8.5" cy="8.5" r="1.5" />
+                            <path d="M21 15l-5-5L5 21" />
+                        </svg>
+                    </div>
+                    <div class="feature-text">
+                        <h3>Formato WebP</h3>
+                        <p>Standard moderno per il web. Converti automaticamente le tue immagini in WebP per piacere a
+                            Google PageSpeed.</p>
+                    </div>
                 </div>
-                <div class="settings-grid">
-                    <div class="input-group">
-                        <label for="maxWidth">Larghezza Max</label>
-                        <div class="input-wrapper">
-                            <input type="number" id="maxWidth" value="1600" min="100" step="100">
-                            <span class="unit">px</span>
-                        </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                        </svg>
                     </div>
-                    <div class="input-group">
-                        <label for="qualityJpg">Qualità JPG</label>
-                        <div class="range-wrapper">
-                            <input type="range" id="qualityJpg" value="75" min="1" max="100"
-                                oninput="this.nextElementSibling.value = this.value">
-                            <output>75</output>
-                        </div>
-                    </div>
-                    <div class="input-group">
-                        <label for="qualityWebp">Qualità WebP</label>
-                        <div class="range-wrapper">
-                            <input type="range" id="qualityWebp" value="75" min="1" max="100"
-                                oninput="this.nextElementSibling.value = this.value">
-                            <output>75</output>
-                        </div>
+                    <div class="feature-text">
+                        <h3>Privacy Totale</h3>
+                        <p>Nessun Cloud, nessun database. Le tue immagini vengono elaborate in sicurezza e cancellate
+                            subito dopo il download.</p>
                     </div>
                 </div>
             </div>
 
-            <!-- Lista File -->
-            <div id="file-list" class="file-list"></div>
+            <div class="content-section">
+                <h2>Perché Ottimizzare le Immagini?</h2>
 
-            <!-- Azioni -->
-            <div class="actions-bar">
-                <button id="optimize-btn" class="btn-primary" disabled>
-                    <span>Ottimizza & Scarica</span>
-                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                        <polyline points="7 10 12 15 17 10"></polyline>
-                        <line x1="12" y1="15" x2="12" y2="3"></line>
-                    </svg>
-                </button>
+                <div class="content-block">
+                    <h3>Migliora il Posizionamento SEO</h3>
+                    <p>La velocità di caricamento è un fattore di ranking fondamentale per Google. Immagini pesanti
+                        rallentano il tuo sito e penalizzano il tuo posizionamento. Con <strong>OptiPix</strong>, riduci
+                        il peso delle pagine e scali la SERP.</p>
+                </div>
+
+                <div class="content-block">
+                    <h3>Core Web Vitals e User Experience</h3>
+                    <p>Immagini ottimizzate significano Largest Contentful Paint (LCP) più veloce. Offri ai tuoi
+                        visitatori un'esperienza fluida e reattiva, riducendo il bounce rate e aumentando le
+                        conversioni.</p>
+                </div>
+
+                <div class="content-block">
+                    <h3>Formati di Nuova Generazione</h3>
+                    <p>Supportiamo nativamente la conversione in <strong>WebP</strong>, il formato raccomandato da
+                        Google che offre una compressione superiore rispetto a JPG e PNG senza artefatti visibili.
+                        Ideale per e-commerce, blog e portfolio.</p>
+                </div>
             </div>
 
-            <!-- Stato -->
-            <div id="status-message" class="status-toast hidden"></div>
+            <div class="content-section" style="margin-top: 3rem;">
+                <h2>Domande Frequenti (FAQ)</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h4>È veramente gratuito?</h4>
+                        <p>Sì, OptiPix è un tool gratuito per l'ottimizzazione delle immagini. Vogliamo rendere il web
+                            più veloce per tutti.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>Che limiti ci sono?</h4>
+                        <p>Puoi caricare file fino a 50MB. Non c'è limite al numero di immagini che puoi ottimizzare
+                            quotidianamente.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>Le mie foto sono al sicuro?</h4>
+                        <p>La sicurezza è la nostra priorità. I file vengono processati su server temporanei e rimossi
+                            immediatamente.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>Supporta la conversione in massa?</h4>
+                        <p>Certamente. Puoi trascinare decine di immagini contemporaneamente e scaricarle tutte insieme
+                            in un comodo file ZIP.</p>
+                    </div>
+                </div>
+            </div>
+
         </main>
+
+        <footer
+            style="text-align: center; margin-top: 4rem; padding-bottom: 2rem; color: var(--text-muted); font-size: 0.9rem;">
+            <p>&copy; 2024 OptiPix - Tool AI per l'ottimizzazione immagini web.</p>
+            <p style="margin-top: 0.5rem; opacity: 0.7;">Privacy Policy | Termini di Servizio | Contatti</p>
+        </footer>
     </div>
 
-    <script src="main.js"></script>
 </body>
 
 </html>
