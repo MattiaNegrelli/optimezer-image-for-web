@@ -1,8 +1,8 @@
-# 🚀 OptiImg - Image Optimizer
+# 🚀 OptiPix - Image Optimizer
 
-**OptiImg** è un tool moderno e potente per l'ottimizzazione delle immagini, sviluppato in Node.js. Offre sia una **interfaccia web** intuitiva con Drag & Drop, sia uno **strumento CLI** per l'elaborazione batch da terminale.
+**OptiPix** è un tool moderno e potente per l'ottimizzazione delle immagini, sviluppato in Node.js. Offre sia una **interfaccia web** intuitiva con Drag & Drop, sia uno **strumento CLI** per l'elaborazione batch da terminale.
 
-![OptiImg Preview](https://via.placeholder.com/800x400?text=OptiImg+Preview)
+![OptiPix Preview](https://via.placeholder.com/800x400?text=OptiPix+Preview)
 
 ## ✨ Funzionalità
 
@@ -25,8 +25,8 @@
 
 1. Clona il repository:
    ```bash
-   git clone https://github.com/tuo-username/optiimg.git
-   cd optiimg
+   git clone https://github.com/tuo-username/OptiPix.git
+   cd OptiPix
    ```
 
 2. Installa le dipendenze:
